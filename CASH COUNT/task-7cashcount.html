@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form table tr td img {
+            height: 40px;
+            width: 100px;
+        }
+        
+        input {
+            height: 40px;
+            margin-left: 10px;
+            border: 2px solid rgb(44, 44, 132);
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        #btn {
+            height: 40px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        button {
+            height: 40px;
+            width: 50px;
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body style="background-color: cadetblue;">
+    <form action="">
+        <table align="center">
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/2000.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note1" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count1" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/500.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note2" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count2" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/200.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note3" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count3" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/100.png" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note4" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count4" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/50.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note5" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count5" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/20.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note6" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count6" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/10.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note7" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count7" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/5.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note8" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count8" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/2.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note9" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count9" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://toolsbro.in/tools/cash_calculator/assets/images/1.jpg" alt="" /></td>
+                <td><input type="number" placeholder="0" onkeyup="total()" id="note10" /></td>
+                <td><button id="btn">=</button>
+                    <td><button id="count10" id="btn1">0</button>
+                    </td>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p id="result"></p>
+    <script>
+        function total() {
+
+
+            // count for 2000 rupees
+            var note1 = document.getElementById("note1").value;
+            var cash = note1 * 2000;
+            document.getElementById("count1").innerHTML = +cash;
+
+            // count for ₹500
+            var note2 = document.getElementById("note2").value;
+            var cash = note2 * 500;
+            document.getElementById("count2").innerHTML = +cash;
+
+            // count for ₹200
+            var note3 = document.getElementById("note3").value;
+            var cash = note3 * 200;
+            document.getElementById("count3").innerHTML = +cash;
+
+            // count for ₹100
+            var note4 = document.getElementById("note4").value;
+            var cash = note4 * 100;
+            document.getElementById("count4").innerHTML = +cash;
+
+            // count for ₹50
+            var note5 = document.getElementById("note5").value;
+            var cash = note5 * 50;
+            document.getElementById("count5").innerHTML = +cash;
+
+            // count for ₹20
+            var note6 = document.getElementById("note6").value;
+            var cash = note6 * 20;
+            document.getElementById("count6").innerHTML = +cash;
+
+            // count for ₹10
+            var note7 = document.getElementById("note7").value;
+            var cash = note7 * 10;
+            document.getElementById("count7").innerHTML = +cash;
+
+            // count for ₹5
+            var note8 = document.getElementById("note8").value;
+            var cash = note8 * 5;
+            document.getElementById("count8").innerHTML = +cash;
+
+            // count for ₹2
+            var note9 = document.getElementById("note9").value;
+            var cash = note9 * 2;
+            document.getElementById("count9").innerHTML = +cash;
+
+            // count for ₹1
+            var note10 = document.getElementById("note10").value;
+            var cash = note10 * 1;
+            document.getElementById("count10").innerHTML = +cash;
+
+            var TotalCash;
+            TotalCash = (note1 * 2000) + (note2 * 500) + (note3 * 200) + (note4 * 100) + (note5 * 50) + (note6 * 20) + (note7 * 10) + (note8 * 5) + (note9 * 2) + (note10 * 1);
+            document.getElementById("result").innerHTML = "Total Cash:" + TotalCash;
+
+        }
+    </script>
+</body>
+
+</html>
